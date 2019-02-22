@@ -20,13 +20,13 @@ public class CoursePopulator implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		Topic java = new Topic("Java");
-		topicRepo.save(java);
+		java = topicRepo.save(java);
 
 		Topic spring = new Topic("Spring");
-		topicRepo.save(spring);
+		spring = topicRepo.save(spring);
 
 		Topic tdd = new Topic("TDD");
-		topicRepo.save(tdd);
+		tdd = topicRepo.save(tdd);
 
 		Course java101 = new Course("Intro to Java", "Learn the fundamentals of Java programming", java);
 		java101 = courseRepo.save(java101);
