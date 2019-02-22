@@ -1,0 +1,1 @@
+Class exercise for JPA

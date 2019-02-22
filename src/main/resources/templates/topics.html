@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>A List of Topics</title>
+</head>
+<body>
+	<header>
+		<h1>A list of topics</h1>
+	</header>
+	
+	<div th:each="topic:${topics}">
+		<h2>
+			<a th:href="@{/topic(id=${topic.id})}" th:text="${topic.name}"></a>
+		</h2>
+	</div>
+</body>
+</html>
